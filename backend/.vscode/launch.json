@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AuditApplication",
+            "request": "launch",
+            "mainClass": "kr.co.jrindustry.audit.AuditApplication",
+            "projectName": "audit"
+        },
+        {
+            "type": "java",
+            "name": "Debug AuditApplication",
+            "request": "launch",
+            "mainClass": "kr.co.jrindustry.audit.AuditApplication",
+            "projectName": "audit",
+            "console": "integratedTerminal",
+            "vmArgs": "-Dspring.profiles.active=dev", // 필요한 경우 추가
+            "args": [] // 필요한 인자를 추가
+        }
+    ]
+}
