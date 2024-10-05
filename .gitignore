@@ -24,8 +24,8 @@ build/
 
 ### macOS ###
 .DS_Store
-backend/.DS_Store
-frontend/.DS_Store
+#backend/.DS_Store
+#frontend/.DS_Store
 
 ### STS ###
 .apt_generated
@@ -48,12 +48,11 @@ frontend/.DS_Store
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
 ### Linux ###
-backend/mvnw
+mvnw
 
 ### Window ###
-backend/mvnw.cmd
+mvnw.cmd
