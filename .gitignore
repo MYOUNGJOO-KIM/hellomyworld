@@ -1,0 +1,53 @@
+### Project ###
+doc/                # Personal Documents
+
+### VS Code ###
+.mvn/               # Visual Studio Code maven 파일 제외
+.vscode/            # Visual Studio Code 설정 파일 제외
+.history/           # Visual Studio Code Local History 파일 제외
+
+### Java Sprint Boot ###
+HELP.md
+target/
+#!.mvn/wrapper/maven-wrapper.jar
+#!**/src/main/**/target/
+#!**/src/test/**/target/
+
+
+### Node.js ###
+frontend/node_modules/
+frontend/node_modules/.cache/
+node_modules/       # Node.js 모듈 폴더 제외
+*.log               # 모든 .log 파일 제외
+build/              # 빌드 디렉토리 제외
+.env                # 환경 변수 파일 제외
+
+### macOS ###
+.DS_Store           # macOS 시스템 파일 제외
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+
