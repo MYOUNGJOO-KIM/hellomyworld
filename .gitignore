@@ -1,29 +1,31 @@
 ### Project ###
-doc/                # Personal Documents
+doc/                
 
 ### VS Code ###
-.mvn/               # Visual Studio Code maven 파일 제외
-.vscode/            # Visual Studio Code 설정 파일 제외
-.history/           # Visual Studio Code Local History 파일 제외
+.mvn/      
+*.tmp        
+.vscode/  
+.history/
 
 ### Java Sprint Boot ###
 HELP.md
 target/
+backend/src/main/resources/*.properties
 #!.mvn/wrapper/maven-wrapper.jar
 #!**/src/main/**/target/
 #!**/src/test/**/target/
 
 
 ### Node.js ###
-frontend/node_modules/
-frontend/node_modules/.cache/
-node_modules/       # Node.js 모듈 폴더 제외
-*.log               # 모든 .log 파일 제외
-build/              # 빌드 디렉토리 제외
-.env                # 환경 변수 파일 제외
+node_modules/
+*.log                        
+build/              
+.env                
 
 ### macOS ###
-.DS_Store           # macOS 시스템 파일 제외
+.DS_Store
+backend/.DS_Store
+frontend/.DS_Store
 
 ### STS ###
 .apt_generated
@@ -50,4 +52,8 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+### Linux ###
+backend/mvnw
 
+### Window ###
+backend/mvnw.cmd
