@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+.dt .dt_attach {
+  width:100%;
+  height: 100%;
+}
+
+.dt .dt_attach .contents_box{
+  display:flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem 1.5rem;
+  /* box-sizing: inherit; */
+}
+  
+.dt .dt_attach .content_box {
+  width: 100%;
+  height: auto;
+  /* box-sizing: inherit; */
+  
+}
+
+.dt .dt_attach .content_box.category_box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dt .dt_attach .content_header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.4rem;
+  padding: 0.5rem 1.0rem;
+  /* box-sizing: inherit; */
+  overflow: hidden;
+  color: #7d7d7d;
+  border-bottom: 1px solid #eee;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.dt .dt_attach .category_box{
+  width:35% !important;
+  margin: 0 1.2rem 0 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.dt .dt_attach .dnm_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(65% - 1.2rem);
+  height: 100%;
+  /* box-sizing: border-box; */
+  padding: 0 1.4rem 0.8rem 1.4rem;
+}
+
+.dt .dt_attach .header_prt {
+  background:#e5e5ef;
+  border:1px solid #dee0fb;
+  border-radius: 5px;
+}
+
+.dt .dt_attach .header_box {
+  display:flex;
+  width: 100%;
+  height: 3.4rem;
+  padding: 0.5rem 1.0rem;
+  /* box-sizing: border-box; */
+  color: #7d7d7d;
+  font-size:0.8rem;
+  font-weight: 600;
+}
+
+.dt .dt_attach .header_box .label {
+  width : 10%;
+  display: flex;
+  align-items: center;
+}
+
+.dt .dt_attach .header_box .content {
+  width : 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dt .dt_attach .header_box .search_box {
+  width : 100%;
+  justify-content: start;
+}
+
+/*            */
+/* pop_up */
+/*            */
+
+.pop_up {
+  width: 100%;
+  
+}
+
+.pop_up.a4{
+  width: 1140px;
+  height: 1610px;
+}
+  
+.pop_up.a4 img{
+  display:block;
+  width: 100%;
+  height: 1600px;
+}
+
+.pop_up p {
+  font-size: 9px;
+  margin: 0 0 0 20px;
+}
+
+/* .dt_attach button.dt_attach_print_all {
+  position: absolute;
+  top: 0;
+  right: 20px;
+} */

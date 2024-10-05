@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<script>
+    const initialTreeData = [
+    {
+        id: '1',
+        label: '(주)코스모스오피스',
+        depth: 0,
+        type: 'root',
+        expand: true,
+        children: [
+            {
+                id: '2',
+                label: '대표',
+                depth: 1,
+                type: 'department',
+                expand: false,
+                children: [
+                    {
+                        id: '3',
+                        label: '김철수 대표',
+                        depth: 2,
+                        type: 'employee',
+                        expand: false,
+                        children: []
+                    }
+                ]
+            },
+            {
+                id: '4',
+                label: 'A 유닛',
+                depth: 1,
+                type: 'department',
+                expand: false,
+                children: []
+            },
+            {
+                id: '5',
+                label: 'B 유닛',
+                depth: 1,
+                type: 'department',
+                expand: false,
+                children: [
+                    {
+                        id: '6',
+                        label: 'B1 팀',
+                        depth: 2,
+                        type: 'department',
+                        expand: false,
+                        children: [
+                            {
+                                id: '7',
+                                label: '홍길동 팀장',
+                                depth: 3,
+                                type: 'employee',
+                                expand: false,
+                                children: []
+                            },
+                            {
+                                id: '8',
+                                label: '이순신 팀원',
+                                depth: 3,
+                                type: 'employee',
+                                expand: false,
+                                children: []
+                            },
+                        ]
+                    }
+                ]
+            },
+        ]
+    }
+];
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot MVC Example</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p th:text="${message}"></p>
+    <p th:text="${testDataList}"></p>
+</body>
+</html>

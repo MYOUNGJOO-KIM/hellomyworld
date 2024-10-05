@@ -1,0 +1,239 @@
+.admin .form {
+    width:100%;
+    height:100%;
+}
+  
+.admin .form .contents_box{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 2.2rem);
+    background: #F2F1F6;
+    padding: 1.5rem 1.5rem;
+    /* box-sizing: inherit; */
+}
+
+.admin .form .content_box {
+    width: 100%;
+    background-color: #fff;
+    /* box-sizing: inherit; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.admin .form .content_header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3.4rem;
+    padding: 0.5rem 1.0rem;
+    /* box-sizing: inherit; */
+    overflow: hidden;    
+    color: #7d7d7d;
+    border-bottom: 1px solid #eee;
+    font-size:0.8rem;
+    font-weight: 600;
+}
+
+.admin .form .category_box{
+    width:35% !important;
+    margin: 0 1.2rem 0 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.admin .form .dnm_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(65% - 1.2rem);
+    height: 100%;
+    /* box-sizing: inherit; */
+}
+
+.admin .form .form_box {
+    width:100%;
+    height:100%;
+}
+
+.admin .form .form_box .input_container_box {
+    height: 3.4rem;
+    padding: 0.5rem 1.0rem;
+    /* box-sizing: border-box; */
+}
+
+.admin .form .form_box .search_box .input_container.text {
+    width: 100%;
+    margin: 0;
+}
+
+.admin .form .form_box .input_container.text {
+    width: 86%;
+}
+
+.admin .form .form_box .input_container.text label {
+    width: 18%;
+}
+
+.admin .form .form_box .input_container.text input[type=text] {
+    width: 70%;
+}
+
+.admin .form .form_box .search_box {
+    justify-content: start;
+}
+
+/* .form_box .search_box button {
+    justify-content: start;
+    margin: 0;
+} */
+
+.admin .form input.title {
+    color: #8d8d8d;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.admin .form .form_table {
+    width:100%;
+    padding: 0 1rem 1rem 1rem;
+    /* box-sizing: border-box; */
+    height: calc(100% - 3.4rem - 3.4rem - 3.4rem);
+}
+
+.admin .form .form_table .row {
+    width:100%;
+    display: flex;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.admin .form .form_table .row.head {
+    border-top: 1px solid #d2d2d2;
+    height: 8%;
+    
+}
+
+.admin .form .form_table .row.body {
+    height: 15%;
+}
+
+.admin .form .form_table .row.foot {
+    height: 20%;
+}
+
+.admin .form .form_table .row.ocrview {
+    height: 25%;
+}
+
+.admin .form .form_table .row.etc {
+    height: 32%;
+}
+
+.admin .form .form_table .row .label_row {
+    width:20%;
+    padding: 0.5rem 1rem;
+    background-color: #ebebeb;
+    /* box-sizing: border-box; */
+}
+
+/* .form_table .row.etc .label_row {
+    width: 20%;
+} */
+
+.admin .form .form_table .row .content_row input {
+    margin: 0 0 1rem 0;
+}
+
+.admin .form .form_table .row .content_row {
+    padding: 0.5rem;
+    width:80%;
+    background-color: #fff;
+    /* box-sizing: border-box; */
+    
+}
+
+.admin .form .form_table .row.etc .content_row {
+    /* width: 80%; */
+    overflow-y: scroll;
+}
+
+.admin .form .form_table .row .content_row textarea{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    overflow-y: scroll;
+    /* box-sizing: border-box; */
+}
+
+.admin .form .form_box .foot_btn_box button {
+    float: right;
+    margin: 0 1rem 0.8rem 0.2rem;
+}
+
+.admin .form .form_table section {
+    width:100%;
+    height:100%;
+}
+
+.admin .form .form_table .dropzone {
+    width:100%;
+    height:100%;
+    cursor: pointer;
+}
+
+.admin .form .form_table p {
+    color: #aaa;
+}
+
+.admin .form .form_table aside {
+    height: 70%;
+    width: 98%;
+    margin: 0.8rem 0 0 0;
+    overflow-y: scroll;
+    /* box-sizing: border-box; */
+}
+
+.admin .form .form_table ul {
+    padding: 0.8rem;
+}
+
+.admin .form .form_table ul li {
+    margin: 0 0 0.5rem 0;
+}
+
+.admin .form .foot_btn_box {
+    height: 3.4rem;
+}
+
+.admin .form .mgt_box{
+    height: 4rem;
+    border-bottom: 0.1rem #c2c2c2 dashed;
+    margin: 0 0 1rem 0;
+}
+
+.admin .form .mgt_box > div{
+    display:flex;
+    align-items: center;
+    margin: 0 0 0.5rem 0;
+}
+
+.admin .form .mgt_box input {
+    margin: 0 0 0 0.5rem !important;
+    width: 50%;
+}
+
+
+
+.admin .form .mgt_box .ol_dot {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0 0.2rem 0 0;
+    background: #EE8031;
+    border-radius: 50px;
+}
+
+.admin .form .mgt_box h3 {
+    font-size: 0.75rem;
+    font-weight: 500;
+}

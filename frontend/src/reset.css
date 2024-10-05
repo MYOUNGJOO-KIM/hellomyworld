@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, select, textarea, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'noto-sans-kr'
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input {
+	margin:0;
+}
+input[type=date] {
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	background: none;
+	color: inherit;
+	font: inherit;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+input:focus {
+	outline: none; /* 기본 outline 제거 */
+}
+select {
+    appearance: none; /* 기본 스타일 제거 */
+    -webkit-appearance: none; /* Safari, Chrome */
+    -moz-appearance: none; /* Firefox */
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+select:focus {
+	outline: none; /* 기본 outline 제거 */
+}
+textarea {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	background: none;
+	font: inherit;
+	color: inherit;
+	resize: none;
+	box-shadow: none;
+	overflow: hidden;
+	width: auto;
+	height: auto;
+  }
+textarea:focus {
+	outline: none; /* 기본 outline 제거 */
+}
+button:focus {
+	outline: none;
+}
+
+
+/*       */ 
+/* FONTS */ 
+/*       */ 
+
+/* @font-face {
+  font-family: 'noto-sans-kr';
+  src: url('./fonts/NotoSansKR-Thin.ttf') format('truetype');
+  font-weight: 100;
+} 
+
+@font-face {
+  font-family: 'noto-sans-kr';
+  src: url('./fonts/NotoSansKR-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+} */
+
+/* @font-face{
+	font-family:'Nanum Gothic';
+	src:url('./assets/fonts/NanumGothic-Regular.ttf') format('truetype');
+	font-weight: 400;
+}
+
+@font-face{
+	font-family:'Nanum Gothic';
+	src:url('./assetsfonts/NanumGothic-Bold.ttf') format('truetype');
+	font-weight: 600;
+}
+
+@font-face{
+	font-family:'Nanum Gothic';
+	src:url('./assetsfonts/NanumGothic-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+} */
+
+
+
+
+@font-face {
+  font-family: 'noto-sans-kr';
+  src: url('./assets/fonts/NotoSansKR-Light.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+font-family: 'noto-sans-kr';
+src: url('./assets/fonts/NotoSansKR-Regular.ttf') format('truetype');
+font-weight: 300;
+}
+
+@font-face {
+font-family: 'noto-sans-kr';
+src: url('./assets/fonts/NotoSansKR-Medium.ttf') format('truetype');
+font-weight: 400;
+}
+
+@font-face {
+font-family: 'noto-sans-kr';
+src: url('./assets/fonts/NotoSansKR-SemiBold.ttf') format('truetype');
+font-weight: 500;
+}
+
+@font-face {
+font-family: 'noto-sans-kr';
+src: url('./assets/fonts/NotoSansKR-Bold.ttf') format('truetype');
+font-weight: 600;
+}
+
+
+@font-face {
+font-family: 'noto-sans-kr';
+src: url('./assets/fonts/NotoSansKR-ExtraBold.ttf') format('truetype');
+font-weight: 700;
+}
+
+
+@font-face {
+font-family: 'noto-sans-kr';
+src: url('./assets/fonts/NotoSansKR-Black.ttf') format('truetype');
+font-weight: 800;
+}
