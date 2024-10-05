@@ -1,0 +1,108 @@
+.admin .cont {
+  width:100%;
+  height:100%;
+}
+
+.admin .cont .contents_box{
+  display:flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 2.2rem);
+  background: #F2F1F6;
+  padding: 1.5rem 1.5rem;
+  color: #000;
+  /* box-sizing: inherit; */
+}
+
+.admin .cont .content_box {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  /* box-sizing: inherit; */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.admin .cont .content_header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 3.4rem;
+  padding: 0.5rem 1.0rem;
+  /* box-sizing: inherit; */
+  overflow: hidden;    
+  color: #7d7d7d;
+  border-bottom: 1px solid #eee;
+  font-size:0.8rem;
+  font-weight: 600;
+}
+
+.admin .cont .category_box{
+  width:35% !important;
+  margin: 0 1.2rem 0 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.admin .cont .dnm_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(65% - 1.2rem);
+  height: 100%;
+  /* box-sizing: inherit; */
+}
+
+.admin .cont .cat_in{
+  width:100%;
+  margin:0 0 1.2rem 0;
+}
+
+.admin .cont .cat_in .input_container {
+  width: calc(50% - 2rem);
+  margin: 0 1rem;
+}
+
+.admin .cont .cat_in .input_container.ckbox {
+  width: calc(25% - 2rem);
+}
+
+.admin .cont .cat_in .content_header{
+  justify-content:space-between;
+}
+
+.admin .cont .cat_in .save_btn{
+  margin: 0 0 0 0.2rem;
+}
+
+.admin .cont .cat_sel{
+  width:100%;
+  height:calc(75% - 1.2rem);
+  
+}
+
+.admin .cont .cat_sel .content_header{
+  display:flex;
+  padding:0 2.5rem;
+  background: #DB9A61;
+  border-radius: 10px 10px 0 0;
+  align-items:flex-end;
+}
+
+.admin .cont .cat_sel .title{
+  display: block;
+  background: #fff;
+  color: #DB9A61;
+  font-weight: 400;
+  border-radius: 20px 20px 0 0;
+  padding: 0.8rem 5rem;
+}
+
+.admin .cont .cat_in .input_container_box {
+  display: flex;
+  height: 3.4rem;
+}
+
+.admin .cont .cat_sel table tr {
+  cursor: pointer;
+}
