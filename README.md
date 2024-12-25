@@ -1,4 +1,4 @@
-# dearmydiaryapp
+# hellomyworld
 Creating a diary app
 
 할 일 목록
