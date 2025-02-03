@@ -1,3 +1,4 @@
+// src/components/TravelRecommender.js
 import React, { useState, useEffect } from 'react';
 import L from 'leaflet';  // Leaflet 라이브러리 임포트
 import 'leaflet/dist/leaflet.css';  // Leaflet CSS
@@ -20,17 +21,25 @@ function TravelRecommender() {
     };
   }, []);
 
-  // 커스텀 마커 아이콘 설정
-  const customIcon = L.icon({
-    iconUrl: 'https://cdn-icons-png.flaticon.com/512/3448/3448366.png',  // 커스텀 아이콘 URL
-    iconSize: [25, 41],  // 아이콘 크기
-    iconAnchor: [12, 41],  // 아이콘 앵커 설정 (기본적으로 아래쪽)
-    popupAnchor: [1, -34],  // 팝업 위치 설정
-    shadowUrl: null,  // 그림자 이미지 비활성화
-    iconRetinaUrl: null,  // 2배 해상도 마커 이미지 비활성화
-    shadowSize: [0, 0],  // 그림자 크기 0으로 설정
-    shadowAnchor: [0, 0]  // 그림자 앵커도 비활성화
-  });
+  //마커 추가 (기본 마커 대신 커스텀 마커 사용)
+  // const customIcon = L.icon({
+  //   iconUrl: require('leaflet/dist/images/marker-icon.png'),  // 커스텀 아이콘 URL
+  //   iconSize: [25, 41],  // 아이콘 크기
+  //   iconAnchor: [12, 41],  // 아이콘 앵커 설정 (기본적으로 아래쪽)
+  //   popupAnchor: [1, -34],  // 팝업 위치 설정
+  //   shadowUrl: null,  // 그림자 이미지 비활성화
+  //   iconRetinaUrl: null,  // 2배 해상도 마커 이미지 비활성화
+  //   shadowSize: [0, 0],  // 그림자 크기 0으로 설정
+  //   shadowAnchor: [0, 0]  // 그림자 앵커도 비활성화
+  // });
+
+  // const defaultIcon = L.divIcon({
+  //   className: 'custom-icon',  // 커스텀 클래스 이름
+  //   html: '<div style="width: 25px; height: 41px; background-color: red; border-radius: 5px;"></div>',  // 사용자 정의 마커 HTML
+  //   iconSize: [25, 41],  // 마커 크기
+  //   iconAnchor: [12, 41],  // 마커 앵커 (마커의 기준점)
+  //   popupAnchor: [0, -41]  // 팝업 위치
+  // });
 
   // 지역 선택 시 좌표 범위 설정
   const getCoordinatesForRegion = (region) => {
@@ -65,13 +74,23 @@ function TravelRecommender() {
 
     // 지도 생성 (Leaflet.js 사용)
     if (map) {
-      map.setView([lat, lng], 18);  // 줌 레벨을 18로 설정하여 더 가까운 범위로 보이게 함
+      map.setView([lat, lng], 18);  // 줌 레벨을 14로 설정하여 더 가까운 범위로 보이게 함
+      // 기존 마커 제거 후 새로운 마커 추가
+      // map.eachLayer((layer) => {
+      //   if (layer instanceof L.Marker) {
+      //     map.removeLayer(layer);
+      //   }
+      // });
+
+      
 
       // 출발지 마커 추가 (서울)
       const startLatLng = [37.5665, 126.9780];  // 서울 시청 좌표 (출발지)
+      //L.marker(startLatLng, { icon: defaultIcon }).addTo(map);//, { icon: defaultIcon }
 
       // 도착지 마커 추가 (추천된 랜덤 좌표)
       const endLatLng = [lat, lng];  // 랜덤 여행지 좌표 (도착지)
+      //L.marker(endLatLng, { icon: defaultIcon }).addTo(map);
 
       // 길찾기 경로 추가
       L.Routing.control({
@@ -96,9 +115,11 @@ function TravelRecommender() {
 
       // 출발지 마커 추가 (서울)
       const startLatLng = [37.5665, 126.9780];  // 서울 시청 좌표 (출발지)
+      //L.marker(startLatLng, { icon: defaultIcon }).addTo(newMap);
 
       // 도착지 마커 추가 (추천된 랜덤 좌표)
       const endLatLng = [lat, lng];  // 랜덤 여행지 좌표 (도착지)
+      //L.marker(endLatLng, { icon: defaultIcon }).addTo(newMap);
 
       // 길찾기 경로 추가
       L.Routing.control({
